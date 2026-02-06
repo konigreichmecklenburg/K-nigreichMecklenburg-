@@ -9,14 +9,14 @@
         html, body {
             height: 100%;
             margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to bottom, #0033a0, #ffffff, #ff0000, #ffcc00); /* Mecklenburgische Flagge */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(to bottom, #0033a0, #ffffff, #ff0000, #ffcc00); /* Blau, Weiß, Rot, Gelb */
-            font-family: Arial, sans-serif;
-            text-align: center;
-            color: #000; /* Standard Textfarbe */
+            color: #000;
         }
 
         /* Überschrift */
@@ -24,29 +24,60 @@
             font-size: 3em;
             margin-bottom: 20px;
             color: #0033a0; /* Blau */
-            text-shadow: 2px 2px 4px #000000; /* leichter Schatten */
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        /* Menü Buttons */
+        .menu {
+            margin-bottom: 30px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 25px;
+            background-color: #ffcc00; /* Gelb */
+            color: #0033a0; /* Blau */
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .menu a:hover {
+            transform: scale(1.1);
+            background-color: #ffdd33;
         }
 
         /* Bild */
         img {
-            max-width: 60%;   /* passt sich dem Bildschirm an */
+            max-width: 60%;
             max-height: 60%;
             object-fit: contain;
-            border: 5px solid #ffcc00; /* gelber Rand */
-            border-radius: 15px; /* abgerundete Ecken */
+            border: 5px solid #ffcc00; /* Gelber Rand */
+            border-radius: 15px;
         }
 
-        /* Untertitel / Beschreibung */
+        /* Untertitel */
         p {
             margin-top: 15px;
             font-size: 1.5em;
             color: #ff0000; /* Rot */
-            text-shadow: 1px 1px 2px #ffffff; /* leichter Schatten */
+            text-shadow: 1px 1px 2px #ffffff;
         }
     </style>
 </head>
 <body>
     <h1>Königreich Mecklenburg</h1>
+
+    <!-- Menü -->
+    <div class="menu">
+        <a href="beitreten.html">Beitreten</a>
+        <a href="minister.html">Minister</a>
+        <a href="infos.html">Infos</a>
+    </div>
+
+    <!-- Bild -->
     <img src="IMG_8669.jpeg" alt="König Leon">
     <p>Der König ist Leon</p>
 </body>
