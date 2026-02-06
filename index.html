@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bild in der Mitte</title>
+    <style>
+        /* Die Seite auf volle Höhe machen und das Bild zentrieren */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* horizontal zentrieren */
+            align-items: center;    /* vertikal zentrieren */
+            background-color: #f0f0f0; /* optional: Hintergrundfarbe */
+        }
+
+        /* Bildgröße anpassen */
+        img {
+            max-width: 90%;   /* Bild passt sich der Breite an */
+            max-height: 90%;  /* Bild passt sich der Höhe an */
+            object-fit: contain; /* Bild bleibt proportional */
+        }
+    </style>
+</head>
+<body>
+    <!-- Hier dein Bild einfügen -->
+    <img src="dein-bild.jpg" alt="Großes Bild">
+</body>
+</html>
